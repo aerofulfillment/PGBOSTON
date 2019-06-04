@@ -13,9 +13,9 @@ namespace PGBOSTON.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Admin()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Your application admin page.";
 
             return View();
         }
