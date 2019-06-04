@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.ComponentModel.DataAnnotations;
 
 namespace PGBOSTON.Models
 {
@@ -9,14 +10,14 @@ namespace PGBOSTON.Models
     {
         public int Id { get; set; }
         public string Employee { get; set; }
-
-        [DataType(DataType.Date)]
+        public string email { get; set; }
         public DateTime RequestEventDate { get; set; }
         public string HomeAddress { get; set; }
         public int RequestMoreTickets { get; set; }
         public int MaxTicketCount { get; }
         public Boolean RequireTransportation { get; set; }
         public Boolean Retiree { get; set; }
-
+        
+        
     }
 }
