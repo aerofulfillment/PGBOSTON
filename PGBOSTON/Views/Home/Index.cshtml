@@ -2,14 +2,30 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>Welcome</h1>
-    <p class="lead">One-time request of enrollment status - click below</p>
-    <p><a href="" class="btn btn-primary btn-lg">Enrollment Status &raquo;</a></p>
+@{
+    Layout = null;
+}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Ticket Form Home</title>
+</head>
+<body>
+  
+    <div class="jumbotron">
+        <h1>Welcome</h1>
+        <p class="lead">One-time request of enrollment status - click below</p>
+        <p><a href="" class="btn btn-primary btn-lg">Enrollment Status &raquo;</a></p>
 
-    @Html.DevExpress().Button(settings => {
-        settings.Name = "Button";
-        settings.UseSubmitBehavior = true;
-            }).GetHtml()
+        @Html.DevExpress().Button(settings =>
+        {
+            settings.Name = "Button";
+            settings.UseSubmitBehavior = true;
+                }).GetHtml()
 
-</div>
+    </div>
+
+</body>
+</html>
+
+

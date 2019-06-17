@@ -1,0 +1,49 @@
+﻿@model PGBOSTON.Models.Userlogin
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div id="login-div">
+        @using (Html.BeginForm(FormMethod.Post))
+        {
+               <table>
+                   <tr>
+                       <td></td>
+                       <td style="text-decoration:underline">PGBOSTON</td>
+                   </tr>
+                   <tr>
+                       <td>
+                           @Html.LabelFor(model => model.UserId)
+                       </td>
+                       <td>
+                           @Html.EditorFor(model => model.UserId)
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                           @Html.LabelFor(model => model.Password)
+                       </td>
+                       <td>
+                           @Html.EditorFor(model => model.Password)
+                       </td>
+                   </tr>
+                   <tr>
+                       <td></td>
+                       <td>
+                           <input type="submit" name="name" value="Login" />
+                           <input type="reset" name="name" value="Clear" />
+                       </td>
+                   </tr>
+               </table>
+        }
+    </div>
+</body>
+</html>
